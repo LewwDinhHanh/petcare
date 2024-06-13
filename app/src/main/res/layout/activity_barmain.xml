@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Barmain">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#BB85FB"/>
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/round2"
+        />
+
+    <!-- Container layout with a top margin -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+
+        <!-- Row 1: First and Second item -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="4dp">
+
+            <!-- First item -->
+            <LinearLayout
+                android:layout_width="164dp"
+                android:layout_height="137dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginEnd="16dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="90dp"
+                    android:src="@drawable/petht"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pet Hotel"
+                    android:textAlignment="center"
+                    android:textColor="#008FA3"
+                    android:textSize="19sp" />
+            </LinearLayout>
+
+            <!-- Second item with rounded background -->
+            <LinearLayout
+                android:layout_width="164dp"
+                android:layout_height="137dp"
+                android:background="@drawable/round"
+                android:backgroundTint="#CAEC93"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp"
+                android:layout_marginEnd="16dp">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/spabg" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pet_spa"
+                    android:textAlignment="center"
+                    android:textSize="19sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Row 2: Third and Fourth item -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="4dp">
+
+            <!-- Third item -->
+            <LinearLayout
+                android:layout_width="164dp"
+                android:layout_height="137dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/round"
+                android:backgroundTint="#FF6969"
+                android:id="@+id/pethealth">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="90dp"
+                    android:src="@drawable/petbr"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pet Health"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="19sp" />
+            </LinearLayout>
+
+            <!-- Fourth item with rounded background -->
+            <LinearLayout
+                android:layout_width="164dp"
+                android:layout_height="137dp"
+                android:background="@drawable/round"
+                android:backgroundTint="#F2CF61"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp"
+                android:layout_marginEnd="16dp"
+                android:id="@+id/petspa">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="72dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/duc" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/pet_spa"
+                    android:textAlignment="center"
+                    android:textSize="19sp"
+                    android:layout_marginTop="1dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"> <!-- Use weightSum to divide space equally -->
+
+            <!-- First item -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"> <!-- Center content -->
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/home"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home"/>
+            </LinearLayout>
+
+            <!-- Second item -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"> <!-- Center content -->
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/home"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home"/>
+            </LinearLayout>
+
+            <!-- Third item -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"> <!-- Center content -->
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/home"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+
+
